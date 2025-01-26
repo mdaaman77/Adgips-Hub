@@ -93,17 +93,12 @@ function Chart2018_22() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-black to-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 py-8">
+      <div className="w-full px-4 py-8">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-3xl font-semibold">Batch 2018-22 Statistics</h2>
-          <button
-            onClick={() => navigate('/')}
-            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg"
-          >
-            Back to Home
-          </button>
+          
         </div>
-        <div className="bg-white rounded-lg p-6" style={{ height: '500px' }}>
+        <div className="bg-white rounded-lg p-6 w-full" style={{ height: '80vh' }}>
           <Bar data={chartData} options={options} />
         </div>
       </div>

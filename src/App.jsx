@@ -63,10 +63,13 @@ function App() {
                     Dr. Akhilesh Das Gupta Institute of Professional Studies - Batch {selectedBatch}
                   </h2>
                   <Statistics stats={stats} />
-                  <div className="flex justify-between items-center mb-4">
+                  
+                  {/* Modified for better mobile responsiveness */}
+                  <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-4">
                     <h3 className="text-xl font-semibold">Company Details</h3>
-                     {/* Filter Toggle Switch */}
-                     <div className="flex items-center gap-2">
+                    <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 w-full sm:w-auto">
+                      {/* Filter Toggle Switch */}
+                      <div className="flex items-center gap-2 w-full sm:w-auto">
                         <label className="relative inline-flex items-center cursor-pointer">
                           <input
                             type="checkbox"
@@ -74,21 +77,21 @@ function App() {
                             checked={showMassHiring}
                             onChange={(e) => setShowMassHiring(e.target.checked)}
                           />
-                          <div className="w-11 h-6 bg-gray-700 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                          <div className="w-11 h-6 bg-gray-700 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-700"></div>
                         </label>
-                        <span className="text-sm font-medium">
+                        <span className="text-sm font-medium whitespace-nowrap">
                           Show Mass Hiring Companies 
                         </span>
                       </div>
-                    <div className="flex gap-4">
                       <Link
                         to={`/charts/${selectedBatch}`}
-                        className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg"
+                        className="bg-green-700 hover:bg-green-500 text-white font-semibold py-2 px-4 rounded-lg w-full sm:w-auto text-center"
                       >
                         View Charts
                       </Link>
                     </div>
                   </div>
+                  
                   {/* Display filtered results count */}
                   {showMassHiring && (
                     <div className="text-sm text-gray-400 mb-2">

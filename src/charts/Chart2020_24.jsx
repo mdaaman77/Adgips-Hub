@@ -93,12 +93,7 @@ function Chart2020_24() {
       <div className="max-w-7xl mx-auto px-4 py-8">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-3xl font-semibold">Batch 2020-24 Statistics</h2>
-          <button
-            onClick={() => navigate('/')}
-            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg"
-          >
-            Back to Home
-          </button>
+          
         </div>
         <div className="bg-white rounded-lg p-6" style={{ height: '500px' }}>
           <Bar data={chartData} options={options} />

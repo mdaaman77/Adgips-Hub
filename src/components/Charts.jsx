@@ -21,18 +21,15 @@ function Charts() {
           <h1 className="text-3xl font-semibold">Placement Statistics Charts</h1>
           <Link
             to="/"
-            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg"
+            className="bg-green-800 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg"
           >
             Back to Home
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* First Chart Section */}
-          <div className="bg-gray-800 p-6 rounded-lg">
-            <h2 className="text-xl font-semibold mb-4">Batch-Wise Placement</h2>
-            {getChart()}
-          </div>
+        <div className="bg-gray-800 p-6 rounded-lg w-full">
+          <h2 className="text-xl font-semibold mb-4">Batch-Wise Placement</h2>
+          {getChart()}
         </div>
       </div>
     </div>
