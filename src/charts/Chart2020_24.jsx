@@ -29,7 +29,7 @@ function Chart2020_24() {
     labels: ["CS", "IT", "ECE", "EEE", "ME+MAE", "CVE", "BBA", "MBA"],
     datasets: [
       {
-        label: "Branch-wise Statistics (2019-23)",
+        label: "Branch-wise Statistics (2020-24)",
         data: [173, 169, 75, 43, 25, 26, 72, 21],
         backgroundColor: [
           "rgba(75, 192, 192, 0.6)",

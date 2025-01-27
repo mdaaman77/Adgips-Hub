@@ -28,7 +28,6 @@ function Charts() {
         </div>
 
         <div className="bg-gray-800 p-6 rounded-lg w-full">
-          <h2 className="text-xl font-semibold mb-4">Batch-Wise Placement</h2>
           {getChart()}
         </div>
       </div>
