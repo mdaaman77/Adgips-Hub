@@ -1,5 +1,5 @@
 export const batchData2020_24 = [
-    { name: "Broad India Pvt Ltd", package: "3.48", placed: 17 },
+    { name: "Broad India Pvt Ltd", package: "3.48-3.55", placed: 32 },
     { name: "A Paul Software", package: "3.13", placed: 10 },
     { name: "Acxiom Consulting", package: "3.00", placed: 5 },
     { name: "AirBlack", package: "6.30", placed: 23 },
@@ -10,7 +10,6 @@ export const batchData2020_24 = [
     { name: "AtkinsRealis", package: "5.70", placed: 5 },
     { name: "Axis Bank", package: "4.60", placed: 11 },
     { name: "Binary Semantics", package: "5.00", placed: 2 },
-    { name: "Broad India Pvt Ltd", package: "3.55", placed: 15 },
     { name: "Celeb AI", package: "4.00", placed: 7 },
     { name: "Microsft India (R&D) Pvt.", package: "48.00", placed: 1 },
     { name: "CISCO", package: "25.50", placed: 1 },
